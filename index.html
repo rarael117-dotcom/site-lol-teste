@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends - Guia Básico</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Poppins", sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* Vídeo de fundo */
+        .background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Conteúdo principal */
+        .content {
+            position: relative;
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: gold;
+        }
+
+        h2 {
+            color: gold;
+        }
+
+        p {
+            font-size: 1.2em;
+            width: 80%;
+            margin: 10px auto 40px auto;
+        }
+
+        img {
+            width: 70%;
+            max-width: 700px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 2px solid gold;
+            box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn {
+            background-color: #1b1b1b;
+            border: 2px solid gold;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: gold;
+            color: black;
+        }
+
+        hr {
+            margin: 40px auto;
+            width: 60%;
+            border-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Vídeo de fundo -->
+    <video id="bg-video" autoplay loop class="background-video">
+        <source src="legendsneverdie.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+    </video>
+
+    <div class="content">
+        <h1>Bem-vindo ao League of Legends</h1>
+        <p>
+            League of Legends é um jogo de estratégia em equipe onde dois times de cinco campeões se enfrentam.
+            Cada jogador assume uma função no mapa, com o objetivo de destruir o Nexus inimigo. 
+        </p>
+
+        <img src="fotolol.png" alt="League of Legends Capa">
+
+        <p>
+            O mapa é dividido em três rotas principais: **Topo (Top)**, **Meio (Mid)** e **Inferior (Bot)**.  
+            Além delas, existe também a **Selva (Jungle)**, uma área entre as rotas com monstros neutros e objetivos importantes.
+        </p>
+
+        <img src="rotaslol.png" alt="Mapa de Summoner's Rift">
+
+        <hr>
+
+        <!-- Todas as rotas explicadas -->
+        <section id="top">
+            <h2>🛡️ Top (Topo)</h2>
+            <p>
+                O Top laner joga na rota superior. Geralmente são campeões resistentes ou lutadores, que aguentam
+                muito dano e são importantes nas lutas em equipe.  
+                Exemplos: <strong>Darius</strong>, <strong>Garen</strong>, <strong>Camille</strong>, <strong>Fiora</strong>.
+            </p>
+        </section>
+
+        <section id="mid">
+            <h2>⚔️ Mid (Meio)</h2>
+            <p>
+                O Mid laner joga na rota do meio e costuma ser o centro do mapa. Ele pode causar dano mágico ou físico e
+                ajudar outras rotas com facilidade.  
+                Exemplos: <strong>Ahri</strong>, <strong>Yasuo</strong>, <strong>Zed</strong>, <strong>Lux</strong>.
+            </p>
+        </section>
+
+        <section id="adc">
+            <h2>🏹 ADC (Atirador)</h2>
+            <p>
+                O ADC (Atirador) joga na rota inferior e é o principal causador de dano físico à distância.
+                Costuma depender do Suporte para se proteger e escalar no jogo.  
+                Exemplos: <strong>Jinx</strong>, <strong>Kai'Sa</strong>, <strong>Ezreal</strong>.
+            </p>
+        </section>
+
+        <section id="sup">
+            <h2>💫 Suporte</h2>
+            <p>
+                O Suporte acompanha o ADC na rota inferior, ajudando com curas, escudos, controle de inimigos e visão do mapa.
+                Ele é essencial para manter o time seguro e garantir a visão nos objetivos.  
+                Exemplos: <strong>Thresh</strong>, <strong>Lulu</strong>, <strong>Leona</strong>, <strong>Nami</strong>.
+            </p>
+        </section>
+
+        <section id="jungle">
+            <h2>🐾 Jungle (Selva)</h2>
+            <p>
+                O Jungler não tem uma rota fixa. Ele se move pela selva, derrotando monstros neutros para ganhar ouro e experiência.
+                Sua função é **ajudar as outras rotas** com ganks (ataques surpresa) e controlar os grandes objetivos:
+                os **Dragões**, o **Barão Nashor** e o **Arauto do Vale**.  
+                Exemplos: <strong>Lee Sin</strong>, <strong>Warwick</strong>, <strong>Elise</strong>, <strong>Rengar</strong>.
+            </p>
+        </section>
+
+        <hr>
+
+        <h2>Bora começar? Qual rota você quer?</h2>
+
+        <div class="buttons">
+            <a href="#top"><button class="btn">Top</button></a>
+            <a href="#mid"><button class="btn">Mid</button></a>
+            <a href="#adc"><button class="btn">ADC</button></a>
+            <a href="#sup"><button class="btn">Suporte</button></a>
+            <a href="#jungle"><button class="btn">Jungle</button></a>
+        </div>
+    </div>
+
+    <!-- Script para tocar o vídeo com som -->
+    <script>
+        const video = document.getElementById('bg-video');
+        video.volume = 0.5; // volume inicial
+
+        video.play().catch(() => {
+            const btn = document.createElement('button');
+            btn.textContent = "Ativar som 🎵";
+            btn.style.position = "fixed";
+            btn.style.bottom = "30px";
+            btn.style.right = "30px";
+            btn.style.padding = "15px 25px";
+            btn.style.fontSize = "1.2em";
+            btn.style.backgroundColor = "gold";
+            btn.style.border = "none";
+            btn.style.borderRadius = "10px";
+            btn.style.cursor = "pointer";
+            btn.onclick = () => {
+                video.play();
+                btn.remove();
+            };
+            document.body.appendChild(btn);
+        });
+    </script>
+
+</body>
+</html>
